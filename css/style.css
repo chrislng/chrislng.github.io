@@ -47,9 +47,17 @@ canvas {
   vertical-align:bottom;
 }
 
+/*
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+}
+*/
+
 /* Set overflow to visible if adding more content below */
 #wrapper {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* Header */
@@ -109,10 +117,28 @@ canvas {
 
 .icon {
   font-size: 3vw;
+  display: inline-block;
+}
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .icon-color {
   background: -webkit-linear-gradient(#00C9FF, #92FE9D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-color:hover {
+  background: #f9f1e9;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-color:active {
+  background: -webkit-linear-gradient(#8360c3, #2ebf91);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -123,8 +149,12 @@ canvas {
     margin-bottom: 15px;
   }
 
+  .icon-container:not(:last-child) {
+    margin-right: 2vw;
+  }
+
   .icon {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -133,8 +163,12 @@ canvas {
     font-size: 2.3vw;
   }
 
+  .icon-container:not(:last-child) {
+    margin-right: 4vw;
+  }
+
   .icon {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 }
 
