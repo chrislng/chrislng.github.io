@@ -40,35 +40,44 @@
     <div class="markdown-body">
         <h1>Hiver 2025 - Christian Lungescu</h1>
         <h2>Semaine 1 (6-14 janvier)</h2>
-        <p>J'ai assisté à une rencontre avec Lena et Vi. Lena est au doctorat en histoire de l'art et a précédemment 
+        <p>
+            J'ai assisté à une rencontre avec Lena et Vi. Lena est au doctorat en histoire de l'art et a précédemment 
             étudié au DIRO. Vi est étudiant au DIRO en dernière année comme moi. Lena nous a présenté Maison MONA et 
             l'application MONA. Nous avons décidé que je vais travailler sur le côté mobile, tandis que Vi travaillera 
-            sur le côté serveur.</p>
+            sur le côté serveur.
+        </p>
         <h2>Semaine 2 (15-21 janvier)</h2>
-        <p>Je me suis familiarisé avec le site web de MONA ainsi qu'aved l'application. J'ai lu à propos des 
+        <p>
+            Je me suis familiarisé avec le site web de MONA ainsi qu'aved l'application. J'ai lu à propos des 
             différents projets de Maison MONA, j'ai téléchargé l'application et je l'ai utilisée pour explorer 
             les Galeries d'art d'Outremont. J'ai parcouru un peu le GitHub de MONA. Je vais travailler avec Sarah, 
             l'ancienne stagiaire en développement mobile qui travaille encore pour MONA. Sarah travaille avec moi 
             comme stagiaire à Hydro-Québec, donc ce devrait être facile de se rencontrer pour collaborer. Je n'ai 
             pas pu rencontrer Sarah en personne cette semaine, mais elle m'a dit de regarder la documentation de 
-            Vue.JS et de Ioniq.</p>
+            Vue.JS et de Ioniq.
+        </p>
         <h2>Semaine 3 (22-28 janvier)</h2>
-        <p>J'ai regardé des vidéos à propos de Vue.JS et de Ioniq. J'ai assisté à une rencontre en personne avec 
+        <p>
+            J'ai regardé des vidéos à propos de Vue.JS et de Ioniq. J'ai assisté à une rencontre en personne avec 
             Lena, Sarah, Vi et Tiffany. Tiffany est étudiante à la maîtrise en informatique. En soirée, j'ai 
             rencontrée Sarah en personne et elle m'a donné le Macbook de MONA. C'est la première fois que j'utilise 
             MacOS, donc je me suis familiarisé avec les fonctionnalités et les différences entre MacOS et Windows. 
             J'ai voulu télécharger le code et installer les applications nécessaire, mais il y avait des problèmes 
             d'autorisations où il fallait le nom d'utilisateur et le mot de passe administrateur. Sarah me l'a 
-            donné et ça a réglé le problème.</p>
+            donné et ça a réglé le problème.
+        </p>
         <h2>Semaine 4 (29 janvier - 4 février)</h2>
-        <p>Cette semaine, Sarah était malade, donc j'ai continué à me familiariser avec Ionic et Vue.JS en 
+        <p>
+            Cette semaine, Sarah était malade, donc j'ai continué à me familiariser avec Ionic et Vue.JS en 
             regardant des tutoriels. Ensuite, j'ai passé du temps à me promener dans mon quartier en utilisant 
             l'application. Cela m'a permis de trouver des problèmes avec l'application. J'ai ensuite fait la même 
             chose avec mon ami et j'ai pris en note ses observations et difficultés. J'ai créé un présentation 
             expliquant les problèmes trouvés et mes suggestions et je l'ai présentée durant la rencontre hebdomadaire. 
-            Enfin, j'ai pensé à des suggestions de modernisation de la page "Application" du site web de Maison MONA.</p>
+            Enfin, j'ai pensé à des suggestions de modernisation de la page "Application" du site web de Maison MONA.
+        </p>
         <h2>Semaine 5 (5-11 février)</h2>
-        <p>J'ai finalement commencé à travailler sur le code. Sarah et Lena m'ont dit que j'apprendrai mieux en 
+        <p>
+            J'ai finalement commencé à travailler sur le code. Sarah et Lena m'ont dit que j'apprendrai mieux en 
             mettant la main à la pâte plutôt qu'en regardant uniquement des tutoriels ou en lisant de la 
             documentations. J'ai pu régler deux issues et compléter mais deux premières pull requests. Le premier issue 
             était que le "pin" (épingle) sélectionné sur la carte n'apparaissait pas toujours devant les autres "pins".
@@ -76,7 +85,33 @@
             issue était de faire en sorte que la barre de recherche de la liste des oeuvres demeure en haut, plutôt 
             que de disparaître lorsqu'on fait dérouler la page. De plus, j'ai créé un issue par rapport à la présentation 
             que j'ai donnée la semaine dernière, j'ai pensé à la priorisation des issues, et j'ai travaillé sur une 
-            maquette pour moderniser la page "Application" du site web de Maison MONA.</p>
+            maquette pour moderniser la page "Application" du site web de Maison MONA.
+        </p>
+        <h2>Semaine 6 (12-18 février)</h2>
+        <p>
+            Cette semaine, j'ai réussi à régler un "bug" que j'avais trouvé frustrant lorsque j'avais commencé à tester l'application. 
+            Lorsqu'on se promenait sure la carte, deux "pins" bleus indiquant la localisation de l'utilisateur 
+            apparaissaient. Cela pouvait être très mélangeant et rendait la navigation difficile. J'ai tout d'abord 
+            dû comprendre comment le code de la carte fonctionnait, dans les fichiers MapContainer.vue et MapPage.vue. 
+            Ensuite, j'ai recherché des tutoriels sur comment afficher la localisation de l'utilisateur sur une carte 
+            en Vue.js. Enfin, en observant le code, j'ai remarqué que la méthode showLocation() créait de nouvelles couches 
+            de localisation à chaque fois qu'elle était appelée sans supprimer les précédentes. J'ai donc modifié cette méthode pour 
+            pour supprimer systématiquement les couches existantes avant d'en créer de nouvelles. De plus, j'ai commencé à analyser le 
+            code des onglets "Collections" et "Badges" ainsi que les issues reliés, et commencé à travailler sur le fait de rajouter une 
+            façon de fermer et ouvrir les sections "Catégories" et "Quartiers" dans l'onglet "Badges". J'ai aussi commencé à penser à 
+            des captures d'écran qui pourraient bien représenter les fonctionnalités de l'application MONA. Elles me seviront à 
+            moderniser la page "Application" du site web de MONA.
+        </p>
+        <h2>Semaine 7 (19-25 février)</h2>
+        <p>
+            Cette semaine, j'ai été malade durant quelques jours et n'ai ainsi pas pu assister à la rencontre hebdomadaire
+            du 19 février, et n'ai pas été très productif jusqu'au 22 février, lorsque j'ai commencé à me sentir mieux. 
+            J'ai travaillé sur l'onglet des badges et des collections, ainsi que sur la page "Application" du site web de 
+            MONA. J'ai réglé un "issue" en rajoutant un accordéon aux sections "Catégories" et "Quartiers" dans l'onglet 
+            "Badges". Un bouton permet maintenant de fermer et d'ouvrir les sections. Il reste maintenant à déterminer si on veut quelque
+            les sections soient fermées ou ouvertes par défaut. De plus, j'ai pensé à la modérnisation de la page "Application" du site 
+            web de MONA, et j'en ai créé un brouillon.
+        </p>
     </div>
 </body>
 </html>
