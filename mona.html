@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/140186505?s=200&v=4">
     <title>Hiver 2025 - Christian Lungescu</title>
     <style>
         * {
@@ -38,11 +39,21 @@
 </head>
 <body>
     <div class="markdown-body">
-        <h1>Hiver 2025 - Christian Lungescu</h1>
+        <h1>IFT 3150 - Hiver 2025 - Christian Lungescu</h1>
+        <img src="https://picasso.iro.umontreal.ca/~mona/storage/logo.jpg" alt="Logo MONA" width="25%"/>
+        <p>
+            Dans le cadre du projet IFT 3150, je travaille comme développeur mobile avec la Maison MONA. Je 
+            contribue à l'amélioration de l'application mobile MONA, une application de découverte artistique 
+            utilisant les "frameworks" Ionic et Vue.js. Cette session, mes tâches consistent, entre autres, à 
+            implémenter de nouvelles fonctionnalités (système de badges interactifs, notifications, etc.), 
+            au redesign de la page web de présentation de l'application, à régler des bugs avec l'application, 
+            et à déployer des test internes de l'application sur Android et iOS.
+        </p>
+
         <h2>Semaine 1 (6-14 janvier)</h2>
         <p>
             J'ai assisté à une rencontre avec Lena et Vi. Lena est au doctorat en histoire de l'art et a précédemment 
-            étudié au DIRO. Vi est étudiant au DIRO en dernière année comme moi. Lena nous a présenté Maison MONA et 
+            étudié au DIRO. Vi est un étudiant au DIRO en dernière année comme moi. Lena nous a présenté Maison MONA et 
             l'application MONA. Nous avons décidé que je vais travailler sur le côté mobile, tandis que Vi travaillera 
             sur le côté serveur.
         </p>
@@ -71,7 +82,7 @@
             Cette semaine, Sarah était malade, donc j'ai continué à me familiariser avec Ionic et Vue.JS en 
             regardant des tutoriels. Ensuite, j'ai passé du temps à me promener dans mon quartier en utilisant 
             l'application. Cela m'a permis de trouver des problèmes avec l'application. J'ai ensuite fait la même 
-            chose avec mon ami et j'ai pris en note ses observations et difficultés. J'ai créé un présentation 
+            chose avec mon ami et j'ai pris en note ses observations et difficultés. J'ai créé une présentation 
             expliquant les problèmes trouvés et mes suggestions et je l'ai présentée durant la rencontre hebdomadaire. 
             Enfin, j'ai pensé à des suggestions de modernisation de la page "Application" du site web de Maison MONA.
         </p>
@@ -79,7 +90,7 @@
         <p>
             J'ai finalement commencé à travailler sur le code. Sarah et Lena m'ont dit que j'apprendrai mieux en 
             mettant la main à la pâte plutôt qu'en regardant uniquement des tutoriels ou en lisant de la 
-            documentations. J'ai pu régler deux issues et compléter mais deux premières pull requests. Le premier issue 
+            documentations. J'ai pu régler deux issues et compléter mes deux premières pull requests. Le premier issue 
             était que le "pin" (épingle) sélectionné sur la carte n'apparaissait pas toujours devant les autres "pins".
             J'ai réglé cela en rajoutant un zIndex de 2, le plaçant ainsi devant les autres "pins". Le deuxième 
             issue était de faire en sorte que la barre de recherche de la liste des oeuvres demeure en haut, plutôt 
@@ -137,6 +148,109 @@
             avait expiré. Toutefois, le fait de rejoindre l'équipe n'a pas résolu le problème. Nous avons essayé 
             d'autres solutions trouvées en faisant une recherche Google, mais nous n'avons pas encore réussi à 
             resoudre le problème.
+
+            Sarah et moi nous sommes rendus compte que je n'avais pas accès aux certificats de développement
+            d'Apple, ce qui pourrait être la cause du problème.
+
+            Nous avons contacté Kim, l'ancienne développeuse mobile de Maison MONA, pour lui demander de 
+            l'aide. Elle a tenté de créer un certificat pour mon compte Apple Developer, mais elle n'avait pas 
+            les droits d'accès nécessaires. Je vais devoir essayer cela avec Lena.
+        </p>
+        <h2>Semaine 10 (13-19 mars)</h2>
+        <p>
+            Cette semaine, Lena était malade et n'a pas pu assister à la rencontre hebdomadaire. Nous avons 
+            fait la réunion sans elle. J'ai continué à travailler sur la modification dynamique du contenant 
+            du nombre total de découvertes et de badges (l'issue 212), mais je n'ai pas encore terminé. J'ai 
+            aussi fait en sorte que du texte s'affiche sur la page de chargement de l'application, indiquant
+            que l'application est en train de se charger.
+            
+            Lundi, Lena, Barbara (la designer) et moi avons eu une rencontre pour discutrer du design de 
+            l'application et du site web. J'ai présenté mon design de la page "Application" du site web de
+            MONA. Barbara et Lena ont aimé ma suggestion de design. Il est disponible sur le 
+            <a href="https://www.canva.com/design/DAGgUVV-6qU/KYREhIFGiTotnyM39St0iQ/edit?utm_content=DAGgUVV-6qU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+            target="_blank" rel="noopener noreferrer">Canva d'amélioration de l'application</a>.
+        </p>
+        <h2>Semaine 11 (20-26 mars)</h2>
+        <p>
+            Cette semaine, nous avons eu la rencontre annuelle de Maison MONA en présentiel. Ce fut 
+            intéressant de rencontrer tous les membres de l'équipe. Je ne savais pas que tant de gens
+            collaboraient au projet. Nous avons discuté de l'année 2024 ainsi que des plans et du budget 
+            pour l'année 2025.
+
+            Cette semaine, j'ai également enfin pu télécharger le certificat de développement d'Apple
+            qui me permettra d'effectuer le déploiement du test interne d'une nouvelle version de 
+            l'application.
+
+            J'ai aussi travaillé sur des idées de gamification pour l'application. Je les ai inscrites
+            sur notre document <a href="https://www.canva.com/design/DAGgUVV-6qU/KYREhIFGiTotnyM39St0iQ/edit?utm_content=DAGgUVV-6qU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+            target="_blank" rel="noopener noreferrer">Canva d'amélioration de l'application</a>. J'ai pensé à des 
+            améliorations telles que des badges spéciaux, par exemple des badges saisonniers pour Noël, pour des 
+            festivals locaux (par exemple le festival du Quartier chinois ou le Festival Mural), des classements
+            communautaires, des parcours thématiques, etc.
+        </p>
+        <h2>Semaine 12 (27 mars - 2 avril)</h2>
+        <p>
+            Cette semaine, la page application du site web de MONA a été mise à jour. Barbara s'est inspirée du design 
+            que je leur avais proposé. Je suis très heureux du résultat. J'ai aussi terminé l'issue 212, soit la 
+            modification dynamique du contenant du nombre total de découvertes et de badges.
+
+            J'ai passé beaucoup de temps à régler des problèmes par rapport au déploiement de l'application. Sur iOS,
+            ce qui causait problème était le runtime Capacitator de Ionic et le gestionnaire de dépendances Cocoapods.
+            J'ai dû les mettre à jour, mais cela a également été problématique. Je n'avais pas l'accès administrateur 
+            sur le Macbook de MONA. J'ai dû obtenir l'accès pour pouvoir utiliser "sudo" dans le terminal. Ensuite, 
+            un autre problème survenait lorsque je tentais de générer les fichier iOS avec Capacitator.
+            Le Mac de MONA utilise une puce ARM64 (M3), mais certaines dépendances Ruby/Cocoapods étaient compilées 
+            pour x86_64, une architecture Intel. J'ai du déinstaller ces dépendances et les réinstaller pour ARM64.
+            J'ai aussi dû mettre à jour le gestionnaire de dépendances Cocoapods. J'ai finalement réussi à générer
+            les fichiers iOS, je pourrait donc faire le déploiement de l'application iOS sur TestFlight.
+
+            Un autre problème est survenu dans Android Studio, pour le déploiement Android. Je n'ai pas encore réussi 
+            à régler le problème, mais je suis en train de l'analyser.
+        </p>
+        <h2>Semaine 13 (3-9 avril)</h2>
+        <p>
+            Cette semaine, j'ai finalement réglé tous les problèmes de déploiement de l'application et j'ai déployé
+            les tests internes sur iOS et Android. Le problème sur Android Studio que j'ai mentionné la semaine 
+            dernière était causé par la manière que le fichier settings.gradle gérait le chemin vers les plugins 
+            Cordova et Capacitator. J'ai modifié ce fichier et réglé le problème.
+            
+            J'ai aussi travaillé sur l'amélioration de la page de l'application sur laquelle on 
+            note et on commente l'oeuvre après l'avoir prise en photo. Entre autres, j'ai rendu la note obligatoire 
+            plutôt que facultative et je travaille à faire en sorte que l'utilisateur puisse modifier la note en 
+            glissant son doigt sur les cinq étoiles, comme Google Maps le fait.
+
+            J'ai également obtenu des retours des utilisateurs par rapport au test interne de l'application. 
+            Sur la carte, Lena trouve quele cercle bleu indiquant la précision de la localisation de l'utilisateur 
+            tend à être trop large. J'ai fait en sorte qu'il ait une taille maximale de 200 mètres. De plus, elle trouve 
+            que la localisation ne se met pas à jour assez rapidement lorsque l'on se promène avec la carte ouverte. 
+            J'ai fait en sorte que la localisation se mette à jour toutes les 2 secondes plutôt que toutes les 
+            5 secondes. Enfin, le cercle bleu indiquant la précision de la localisation l'utilisateur est parfois 
+            devant les "pins" indicateurs d'oeuvres et le "pin" bleu indiquant la position de l'utilisateur est parfois 
+            derrière les "pins" indicateurs d'oeuvres. Je réglerai cela la semaine prochaine.
+        </p>
+        <h2>Semaine 14 (10-16 avril)</h2>
+        <p>
+            Cette semaine, j'ai réglé le problème du cercle bleu de précision de la localisation et du "pin" bleu de
+            position de l'utilisateur qui apparaissaient parfois derrière et parfois devant les "pins" indicateurs 
+            d'oeuvres. Maintenant, le "bleu" apparaît au dessus des autres "pins" et le cercle bleu apparaît derrière 
+            les autres "pins".
+
+            J'ai également travaillé sur deux nouvelles fonctionnalités : une notification qui apparaît dans 
+            l'application lorsqu'on obtient un badge ainsi que la possibilité d'appuyer sur les badges pour ouvrir 
+            une fenêtre indiquant la description du badge. Je suis encore en train de débugger ces deux 
+            fonctionnalités.
+        </p>
+        <h2>Semaine 15 (17-22 avril)</h2>
+        <p>
+            Cette semaine, j'ai terminé d'implémenter et de tester les notifications d'obtention de badge et 
+            la fenêtre d'information sur les badges. J'ai aussi réglé deux bugs soulevés par Prof. Guy Lapalme lors 
+            du test interne. Dans l'annuaire, la fenêtre des filtres apparaissait trop bas dans la page, se qui 
+            rendait impossible de sélectionner des filtres. De plus, le titre des filtres apparaissait en dehors 
+            de la capsule des filtres.
+
+            Enfin, j'ai déployé le test interne de l'application iOS et Android contenant toutes mes améliorations
+            récentes. C'est le dernier test interne que j'effecterai cette session dans le cadre du projet IFT 3150.
+            Toutefois, je continuerai à travailler avec MONA cet été.
         </p>
     </div>
 </body>
